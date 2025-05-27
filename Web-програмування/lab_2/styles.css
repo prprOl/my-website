@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #2196F3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 5px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Модальне вікно */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+/* Денна тема */
+.day-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Нічна тема */
+.night-theme {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.night-theme header {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.night-theme section {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.night-theme footer {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+/* Стиль для кнопки перемикання теми */
+#theme-toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#theme-toggle-button:hover {
+    background-color: #0b7dda;
+}
